@@ -1,3 +1,31 @@
+#### Link to the Server ---------------------------------------
+#                      |  https://jobs-api-rkev.onrender.com  |
+####                    ---------------------------------------
+
+#### Summary
+
+Job API is a basic API project powered by NodeJs
+This Project is specifically made to demonstrate the basic Architecture of a server 
+
+The following work done to establish engine :-
+  1. Establishing server (via Express js)
+  2. Making route Architecture 
+  3. Modelling DataBase Structure
+  4. Connecting MongoDB to the server
+  5. A complex error handling 
+  6. Assinging logic to the Routes 
+  7. Taking request parameter from the client 
+  8. Responding with expected payload
+  9. User Validation/Authentication
+  10.Performing CRUD operation with user Database.
+
+These are the least feature there are many more
+
+#### 
+
+
+
+
 #### Setup
 
 ```bash
