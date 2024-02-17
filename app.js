@@ -43,7 +43,7 @@ const jobRouter = require("./routes/jobs");
 app.get("/", (req, res) => {
   res.send('<h1> Jobs API </h1><a href="/api-docs">Documentation</a>');
 });
-app.use("api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocx));
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocx));
 
 // routes
 app.use("/api/v1/auth", authRouter);
