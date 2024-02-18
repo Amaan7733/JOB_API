@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.0.0
 info:
   title: Jobs API
   contact: {}
@@ -104,14 +104,14 @@ paths:
       deprecated: false
       security:
       - bearer: []
-  /user/{id}:
+  /jobs/{id}:
     parameters:
-      - in: path
-        name: id
-        schema:
-          type: integer
-        required: true
-        description: The user ID
+    - in: path
+      name: id
+      schema:
+        type: string
+      required: true
+      description: the job id
     get:
       tags:
       - jobs
@@ -125,6 +125,7 @@ paths:
       deprecated: false
       security:
       - bearer: []
+  
     patch:
       tags:
       - jobs
@@ -233,6 +234,8 @@ components:
       scheme: bearer
 security: []
 tags:
+- name: Misc
+  description: ''
 - name: Auth
   description: ''
 - name: jobs
